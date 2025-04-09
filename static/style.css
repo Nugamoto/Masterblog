@@ -1,0 +1,73 @@
+/* === Grundlayout === */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4F4F4F;
+}
+
+/* === Beitrag / Post === */
+.post {
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+/* === Formular === */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 12px 0 4px;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* === Button === */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
