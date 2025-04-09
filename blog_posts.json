@@ -3,60 +3,70 @@
         "id": 1,
         "author": "Max Huber",
         "title": "Bitcoin Explained Like You're 5",
-        "content": "A simple explanation of how Bitcoin works, from blocks to wallets."
+        "content": "A simple explanation of how Bitcoin works, from blocks to wallets.",
+        "likes": 0
     },
     {
         "id": 2,
         "author": "Laura Neumann",
         "title": "Why Bitcoin Is Not Just Digital Money",
-        "content": "A look into Bitcoin as a protocol for decentralized trust, not just currency."
+        "content": "A look into Bitcoin as a protocol for decentralized trust, not just currency.",
+        "likes": 0
     },
     {
         "id": 3,
         "author": "Felix Braun",
         "title": "Understanding the Bitcoin Halving",
-        "content": "What is the halving event and why does it matter for Bitcoin's monetary policy?"
+        "content": "What is the halving event and why does it matter for Bitcoin's monetary policy?",
+        "likes": 0
     },
     {
         "id": 4,
         "author": "Nora Vogel",
         "title": "What Makes Bitcoin Truly Decentralized?",
-        "content": "Exploring node culture, governance, and how consensus actually works."
+        "content": "Exploring node culture, governance, and how consensus actually works.",
+        "likes": 0
     },
     {
         "id": 5,
         "author": "Samuel Becker",
         "title": "The Lightning Network: Scaling Bitcoin",
-        "content": "How Lightning enables fast, cheap transactions on top of Bitcoin."
+        "content": "How Lightning enables fast, cheap transactions on top of Bitcoin.",
+        "likes": 0
     },
     {
         "id": 6,
         "author": "Anna Roth",
         "title": "Running a Bitcoin Full Node at Home",
-        "content": "Why and how you should run your own node to support the network."
+        "content": "Why and how you should run your own node to support the network.",
+        "likes": 0
     },
     {
         "id": 7,
         "author": "Tobias Zimmer",
         "title": "Bitcoin Mining: Beyond the Buzzwords",
-        "content": "What miners actually do, how blocks are built, and why proof-of-work matters."
+        "content": "What miners actually do, how blocks are built, and why proof-of-work matters.",
+        "likes": 0
     },
     {
         "id": 8,
         "author": "Helena Schr\u00f6der",
         "title": "Privacy in Bitcoin: What You Need to Know",
-        "content": "Bitcoin isn't anonymous. Learn how to protect your privacy as a user."
+        "content": "Bitcoin isn't anonymous. Learn how to protect your privacy as a user.",
+        "likes": 0
     },
     {
         "id": 9,
         "author": "Lars K\u00f6nig",
         "title": "Bitcoin vs Central Banks",
-        "content": "A deep dive into how Bitcoin contrasts with traditional monetary systems."
+        "content": "A deep dive into how Bitcoin contrasts with traditional monetary systems.",
+        "likes": 0
     },
     {
         "id": 10,
         "author": "Mira Weber",
         "title": "Bitcoin in 2025: Where Are We Headed?",
-        "content": "Predictions, developments, and open questions about the future of Bitcoin."
+        "content": "Predictions, developments, and open questions about the future of Bitcoin.",
+        "likes": 0
     }
 ]

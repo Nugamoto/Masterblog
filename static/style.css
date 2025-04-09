@@ -103,3 +103,12 @@ button:hover {
 .button-create:hover {
   background-color: #45a049;
 }
+
+.button-like {
+  background-color: #fce4ec; /* sehr helles Rosa */
+  color: #c2185b;            /* dunkles Pink/Rot für Herz */
+}
+
+.button-like:hover {
+  background-color: #f8bbd0;
+}

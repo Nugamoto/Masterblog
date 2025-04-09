@@ -60,5 +60,19 @@ def update(post_id):
     return render_template('update.html', post=post)
 
 
+@app.route('/like/<int:post_id>')
+def like(post_id):
+    blog_posts = load_json()
+
+    for post in blog_posts:
+        if str(post["id"]) == str(post_id):
+            # Stelle sicher, dass "likes" existiert
+            post["likes"] = post.get("likes", 0) + 1
+            break
+
+    save_json(blog_posts)
+    return redirect(url_for('index'))
+
+
 if __name__ == '__main__':
     app.run(debug=True)
