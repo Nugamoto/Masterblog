@@ -51,7 +51,7 @@ textarea {
   min-height: 120px;
 }
 
-/* === Button === */
+/* === Allgemeiner Button-Stil === */
 button {
   margin-top: 20px;
   padding: 12px;
@@ -67,7 +67,39 @@ button:hover {
   background-color: #45a049;
 }
 
+/* === Buttons Container === */
 .button-container {
   text-align: center;
   margin-bottom: 30px;
+}
+
+.button-container-new-blog {
+  margin-bottom: 30px;
+}
+
+/* === Farbige Buttons === */
+
+.button-delete {
+  background-color: #e74c3c; /* Rot */
+}
+
+.button-delete:hover {
+  background-color: #c0392b;
+}
+
+.button-edit {
+  background-color: #f1c40f; /* Gelb */
+  color: black;
+}
+
+.button-edit:hover {
+  background-color: #d4ac0d;
+}
+
+.button-create {
+  background-color: #4CAF50; /* Standard-Grün */
+}
+
+.button-create:hover {
+  background-color: #45a049;
 }
