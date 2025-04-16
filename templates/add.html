@@ -8,6 +8,10 @@
 </head>
 <body>
 <h2>Add a New Blog Post</h2>
+
+{% if error %}
+<p class="form-error">{{ error }}</p>
+{% endif %}
 <form method="POST" action="/add">
     <label for="author">Author:</label>
     <input type="text" id="author" name="author" required>

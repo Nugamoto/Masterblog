@@ -14,7 +14,7 @@ def load_json(filepath=DEFAULT_FILEPATH):
         list: List of blog post dictionaries.
     """
     try:
-        with open(filepath, "r") as fileobject:
+        with open(filepath, "r", encoding="utf-8") as fileobject:
             return json.load(fileobject)
     except (FileNotFoundError, json.JSONDecodeError):
         return []
@@ -27,9 +27,18 @@ def save_json(content, filepath=DEFAULT_FILEPATH):
     Args:
         content (list): List of blog post dictionaries to save.
         filepath (str): Path to the JSON file.
+
+    Raises:
+        IOError: If writing to file fails.
+        TypeError: If content is not serializable to JSON.
     """
-    with open(filepath, "w") as fileobject:
-        fileobject.write(json.dumps(content, indent=4))
+    try:
+        with open(filepath, "w", encoding="utf-8") as fileobject:
+            json.dump(content, fileobject, indent=4)
+    except (IOError, OSError) as e:
+        raise IOError(f"Failed to write to file {filepath}") from e
+    except TypeError as e:
+        raise TypeError("Provided content could not be serialized to JSON") from e
 
 
 def get_new_id(blog_posts):
@@ -57,12 +66,12 @@ def fetch_post_by_id(post_id, posts):
         posts (list): List of blog post dictionaries.
 
     Returns:
-        dict: The found post, or an empty dict if not found.
+        dict: The found post, or None if not found.
     """
     for post in posts:
         if str(post["id"]) == str(post_id):
             return post
-    return {}
+    return None
 
 
 def update_blog_post(post_id, author, title, content, posts):
@@ -112,6 +121,7 @@ def add_blog_post(post_id, author, title, content, posts):
         }
     )
     save_json(posts)
+
 
 if __name__ == "__main__":
     pass

@@ -4,7 +4,7 @@
         "author": "Max Huber",
         "title": "Bitcoin Explained Like You're 5",
         "content": "A simple explanation of how Bitcoin works, from blocks to wallets.",
-        "likes": 0
+        "likes": 4
     },
     {
         "id": 2,
@@ -60,13 +60,6 @@
         "author": "Lars K\u00f6nig",
         "title": "Bitcoin vs Central Banks",
         "content": "A deep dive into how Bitcoin contrasts with traditional monetary systems.",
-        "likes": 0
-    },
-    {
-        "id": 10,
-        "author": "Mira Weber",
-        "title": "Bitcoin in 2025: Where Are We Headed?",
-        "content": "Predictions, developments, and open questions about the future of Bitcoin.",
-        "likes": 0
+        "likes": 5
     }
 ]

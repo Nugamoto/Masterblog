@@ -1,4 +1,4 @@
-/* === Grundlayout === */
+/* === Base layout === */
 body {
   font-family: Arial, sans-serif;
   background-color: #F5F5F5;
@@ -11,7 +11,7 @@ h1 {
   color: #4F4F4F;
 }
 
-/* === Beitrag / Post === */
+/* === Blog post container === */
 .post {
   background-color: #FFF;
   border: 1px solid #DDD;
@@ -28,10 +28,14 @@ h1 {
   margin: 10px 0;
 }
 
-/* === Formular === */
+/* === Form styles === */
 form {
   display: flex;
   flex-direction: column;
+}
+
+.inline-form {
+  display: inline;
 }
 
 label {
@@ -51,7 +55,7 @@ textarea {
   min-height: 120px;
 }
 
-/* === Allgemeiner Button-Stil === */
+/* === Buttons === */
 button {
   margin-top: 20px;
   padding: 12px;
@@ -77,10 +81,20 @@ button:hover {
   margin-bottom: 30px;
 }
 
-/* === Farbige Buttons === */
+/* === Button groups inside posts === */
+.button-group-like,
+.button-group-edit-delete {
+  margin-top: 10px;
+}
 
+.button-group-edit-delete {
+  display: flex;
+  gap: 10px;
+}
+
+/* === Colored button variants === */
 .button-delete {
-  background-color: #e74c3c; /* Rot */
+  background-color: #e74c3c;
 }
 
 .button-delete:hover {
@@ -88,7 +102,7 @@ button:hover {
 }
 
 .button-edit {
-  background-color: #f1c40f; /* Gelb */
+  background-color: #f1c40f;
   color: black;
 }
 
@@ -97,7 +111,7 @@ button:hover {
 }
 
 .button-create {
-  background-color: #4CAF50; /* Standard-Grün */
+  background-color: #4CAF50;
 }
 
 .button-create:hover {
@@ -105,10 +119,17 @@ button:hover {
 }
 
 .button-like {
-  background-color: #fce4ec; /* sehr helles Rosa */
-  color: #c2185b;            /* dunkles Pink/Rot für Herz */
+  background-color: #fce4ec;
+  color: #c2185b;
 }
 
 .button-like:hover {
   background-color: #f8bbd0;
+}
+
+/* === Error message === */
+.form-error {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1em;
 }

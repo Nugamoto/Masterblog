@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
+
 from functions import load_json, save_json, get_new_id, fetch_post_by_id, add_blog_post, update_blog_post
 
 app = Flask(__name__)
@@ -26,18 +27,23 @@ def add():
         On POST: Redirect to homepage after saving new post.
     """
     if request.method == 'POST':
+        author = request.form.get("author", "").strip()
+        title = request.form.get("title", "").strip()
+        content = request.form.get("content", "").strip()
+
+        if not author or not title or not content:
+            error = "All fields must be filled."
+            return render_template('add.html', error=error)
+
         blog_posts = load_json("blog_posts.json")
         new_id = get_new_id(blog_posts)
-        author = request.form.get("author")
-        title = request.form.get("title")
-        content = request.form.get("content")
         add_blog_post(new_id, author, title, content, blog_posts)
         return redirect(url_for('index'))
 
     return render_template('add.html')
 
 
-@app.route('/delete/<post_id>')
+@app.route('/delete/<post_id>', methods=['POST'])
 def delete(post_id):
     """
     Delete a blog post by ID.
@@ -108,4 +114,4 @@ def like(post_id):
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5001, debug=True)
